@@ -1,0 +1,33 @@
+<div class = "registerBackground">
+    <div class="wrapper">
+        <div id = "principal">
+            <div class = "content">
+                <h2>Create account:</h2>
+                <form action = "/newUser" method = "post">
+                    <label for="username" >Username:</label> 
+                    <input placeholder="Username" type="text"id="username" name="username" required><br/>
+
+                    <label for="password">Password:</label> 
+                    <input placeholder="Password" type="password" id="password" name="password" required><br/>
+
+                    <label for="fName">First name:</label> 
+                    <input placeholder="First name" type="text" id="fName" name="fName" required><br/>
+
+                    <label for="lName">Last name:</label> 
+                    <input placeholder="Last name" type="text" id="lName" name="lName" required><br/>
+
+                    <label for="mail">E-mail:</label> 
+                    <input placeholder="E-mail" type="email" id="mail" name="mail" required><br/>
+
+                    <input type="submit" value="Submit">
+                </form>
+                {{#if error}}
+                    <div class="error">{{error}}</div> 
+                {{/if}}
+                {{#if message}}
+                    <div class="error">{{message}}</div>   
+                {{/if}}  
+            </div>
+        </div> 
+    </div> 
+</div>

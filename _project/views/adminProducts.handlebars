@@ -1,0 +1,40 @@
+<div class="adminProductsBackground">
+    <div class="wrapper">
+        <div class="content">
+            <h2>Manage Products</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Color</th>
+                        <th>Category</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Image URL</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each products}}
+                        <tr>
+                            <td>{{this.productID}}</td>
+                            <td>{{this.pName}}</td>
+                            <td>{{this.desc}}</td>
+                            <td>{{this.color}}</td>
+                            <td>{{this.category}}</td>
+                            <td>{{this.quantity}}</td>
+                            <td>${{this.price}}</td>
+                            <td><img src="/img/{{this.imageURL}}" alt="{{this.pName}}" class="product-image"></td>
+                            <td>
+                                <a href="/editProduct/{{this.productID}}" class="cta">Edit</a>
+                                <a href="/deleteProduct/{{this.productID}}" class="cta">Delete</a>
+                            </td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

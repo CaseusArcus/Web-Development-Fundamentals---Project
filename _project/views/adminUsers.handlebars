@@ -1,0 +1,36 @@
+<div class="adminUsersBackground">
+    <div class = "wrapper">
+       <div class="content">
+            <h2>Manage Users</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                        <th>Email Adress</th>
+                        <th>Admin</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each users}}
+                        <tr>
+                            <td>{{this.userID}}</td>
+                            <td>{{this.fName}}</td>
+                            <td>{{this.lName}}</td>
+                            <td>{{this.username}}</td>
+                            <td>{{this.mail}}</td>
+                            <td>{{#if this.isAdmin}}Yes{{else}}No{{/if}}</td>
+                            <td>
+                                <a href="/editUser/{{this.userID}}" class="cta">Edit</a>
+                                <a href="/deleteUser/{{this.userID}}" class="cta">Delete</a>
+                            </td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

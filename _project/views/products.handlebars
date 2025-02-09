@@ -1,0 +1,22 @@
+<div class="productsBackground">
+    <div class="wrapper">
+        <div class="content">
+            <h2>Available Products</h2>
+            <div class="products">
+            {{#if products.length}}
+                    {{#each products}}
+                        <article class="product-item">
+                            <a href="/product/{{this.productID}}" class="product-link">
+                                <img src="/img/{{imageURL}}" alt="{{pName}}" class="product-image">
+                                <p class="product-name">{{this.pName}}</p>
+                                <p class="product-price">${{this.price}}</p>
+                            </a>
+                        </article>
+                    {{/each}}
+            </div>
+            {{else}}
+                <p class="no-products">No products available at the moment. Please check back later!</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

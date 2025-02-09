@@ -1,0 +1,21 @@
+<div class="home">
+    <div class = "wrapper">
+        {{#if isLoggedIn}}
+            {{#if session.isAdmin}}
+            <h1>Welcome to the Admin page, {{session.name}}!</h1>
+            <div class="admin-buttons">
+                <a href="/adminUsers" class="cta">Manage Users</a>
+                <a href="/adminProducts" class="cta">Manage Products</a>
+            </div>
+            {{else}}
+                <h1>Welcome back, {{session.name}}!</h1>
+                <p>Check out our latest collection of balls!</p>
+                <a href="/products" class="cta">Shop Now</a>
+            {{/if}}
+        {{else}}
+            <h1>Welcome to Paul's Balls!</h1>
+            <p>Sign up to become a member of our family of ball enthusiasts!</p>
+            <a href="/register" class="cta">Join the family</a>
+        {{/if}}
+    </div>
+</div>

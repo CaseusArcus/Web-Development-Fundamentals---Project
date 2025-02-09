@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="0.1">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Paul's Balls</title>
+    </head>
+    <header>
+        <nav>
+            <ul class = "navigation">
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                {{#if session.isLoggedIn}}
+                    <li id="menulogin"><a href="/logout">Logout</a></li>
+                {{else}}
+                    <li id="menulogin"><a href="/login">Login</a></li>
+                {{/if}}
+            </ul>
+        </nav>
+    </header>
+    <body>
+        {{{body}}}
+    </body>
+    <footer>
+        <p>&copy; Paul's balls 2024</p>
+    </footer>
+</html>

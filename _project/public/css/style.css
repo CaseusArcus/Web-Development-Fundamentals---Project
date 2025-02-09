@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgba(125, 213, 240, 0.669);
+}
+
+h2 {
+    padding-bottom: 5px;
+}
+
+article {
+    background-color: rgba(255, 255, 255, 0.866);
+    padding: 10px;
+}
+
+/* Used to add padding around contents */
+.wrapper {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/* Used to add color to contents */
+.content {
+    background-color: rgba(245, 245, 245, 0.800);
+    padding: 10px;
+ }
+
+ /* Used to mimic buttons */
+ .cta {
+    display: inline-block;        
+    padding: 10px 20px;             
+    font-size: 16px;               
+    font-weight: bold;             
+    text-align: center;            
+    background-color:  rgb(0, 150, 150);  
+    color: white;                   
+    border: 2px solid rgb(0, 120, 120);     
+    border-radius: 5px;            
+    text-decoration: none;         
+    transition: all 0.3s ease; 
+}
+
+.cta:hover {
+    background-color: rgb(0, 100, 140);      
+    border-color: rgb(0, 120, 120);         
+    color: white;                   
+}
+
+/* Used for the description field while editing a product */
+textarea {
+    font-family: inherit;
+    resize: vertical;
+    height: 150px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Used to disply text above fields for forms */
+form label {
+    display: block; 
+    font-weight: bold; 
+    margin-top: 5px;
+}
+
+/* Used to improve look of tables */
+table {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+/* Used to change color of table header */
+th {
+    border: 2px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: rgb(0, 200, 200);  
+}
+
+/* Used to add border around cells */
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Used to resize images */
+.adminProducts img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.menulogin li{
+    background-color: antiquewhite;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    padding: 10px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.products img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .products a {
+    text-decoration: none;
+}
+
+ .products a:hover{
+    text-decoration: underline;
+ } 
+
+.productDescription img {
+    padding: 10px;
+}
+
+.product-info {
+    background-color: #46c9e395;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.product-info p{
+    margin: 2px;
+}
+
+.productDescription a {
+    text-decoration: none;
+    color: white; 
+    background-color:  rgb(0, 150, 150);
+    border-radius: 5px;  
+    padding: 5px;
+    margin-top: 5px;
+    width: fit-content;
+    font-size: 16px; 
+    transition: all 0.3s ease;  
+    padding: 10px 20px;     
+}
+
+.aboutBackground .content a {
+    text-decoration: none; /* Removes the underline */
+    color: black; /* Sets the color to black */
+}
+
+.about p {
+    margin-top: -10px;
+    padding: 10px;
+}
+
+.home h1 {
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.home p {
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.home a:hover {
+    color: whitesmoke;
+}
+
+.home {
+    background-image: url('../img/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    min-height: 100vh;
+}
+
+.contactBackground {
+    background-image: url('../img/login.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    min-height: 100vh;
+}
+
+.loginBackground {
+    background-image: url('../img/login2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    min-height: 100vh; 
+}
+
+.registerBackground {
+    background-image: url('../img/login.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    min-height: 100vh; 
+}
+
+.aboutBackground {
+    background-image: url('../img/Paul.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    min-height: 100vh;
+}
+
+ul {
+    font-size:x-large;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+ul a {
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: rgba(24, 223, 230, 0.92);
+}
